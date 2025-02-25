@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/providers";
 import Topbar from "@/components/topbar";
+import { Toaster } from "@/components/ui/sonner";
 
 const manropeSans = Manrope({
   variable: "--font-manrope-sans",
@@ -20,11 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${manropeSans.variable} antialiased`}>
         <Providers>
           <Topbar />
-          <main className="max-w-4xl mx-auto pt-28 px-8">{children}</main>
+          <main className="px-4 pt-28">{children}</main>
+          <Toaster />
         </Providers>
       </body>
     </html>
