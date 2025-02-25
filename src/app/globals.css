@@ -119,3 +119,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+* {
+  font-family: "Manrope";
+  font-weight: 400;
+}

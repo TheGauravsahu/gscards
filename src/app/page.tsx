@@ -1,13 +1,10 @@
-import { ThemeToggle } from "@/components/theme-toggle";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div>
-      <h1>Cards App</h1>
-      <Button>Click me</Button>
-      <ThemeToggle />
+    <div className="flex items-center justify-center">
+      <h1 className="text-7xl  font-semibold leading-none line-clamp-0">Cards App</h1>
+     
     </div>
   );
 }
