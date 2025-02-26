@@ -14,11 +14,7 @@ export default function LoadingButton({
   onClick,
 }: LoadingButtonProps) {
   return (
-    <Button
-      onClick={onClick}
-      type="submit"
-      disabled={pending}
-    >
+    <Button onClick={onClick} type="submit" disabled={pending}>
       {pending && <Loader2 className="animate-spin w-5 h-5" />}
       {children}
     </Button>

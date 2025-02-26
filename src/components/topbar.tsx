@@ -11,7 +11,7 @@ export default function Topbar() {
   const { data: session } = authClient.useSession();
 
   return (
-    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 flex items-center justify-between w-[90%] md:w-[80vw] border  bg-white/80 backdrop-blur-lg p-3 px-5 rounded-xl shadow-sm dark:border-gray-700 dark:bg-black/50">
+    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 flex items-center justify-between h-12 md:w-[50%] w-[90%] border  bg-white/80 backdrop-blur-lg p-3 px-5 rounded-full shadow-sm dark:border-gray-700 dark:bg-black/50">
       <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
         <LayoutDashboard className="w-6 h-6 text-primary" />
         <span>GS Cards</span>
